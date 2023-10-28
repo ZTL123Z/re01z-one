@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>分享微信、QQ</title>
+  </head>
+  <body>
+    <ul
+      id="content-share-list"
+      class="bdsharebuttonbox bdshare-button-style0-16"
+    >
+      <li>
+        <a
+          class="content_qq"
+          <a
+          target="_blank"
+          href="https://qm.qq.com/cgi-bin/qm/qr?k=eLjHmQryIKqltTmdL5iohxEV1KikojoM&jump_from=webapi&authKey=ye8vdGAyz/yO9p169YRLPY2dB359zIJ3PXHJkxrF6K4OTqspLwtig2nLNBdy4DZW"
+          ><img
+            border="0"
+            src="//pub.idqqimg.com/wpa/images/group.png"
+            alt="朱git网页群"
+            title="朱git网页群"
+        /></a>
+        >
+      </li>
+      <li>
+        <a
+          class="content_qqzone"
+          <img
+            border="0"
+            src="qrcode-302.png"
+            alt="朱git网页群"
+            title="朱git网页群"
+        />
+          >QQ二维码</a
+        >
+      </li>
+      <li><a class="content_weixin" data-cmd="weixin">微信好友</a></li>
+      <li>
+        <a
+          class="content_sina"
+          href="javascript:window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title.substring(0,76))+'&amp;url='+encodeURIComponent(location.href)+'&amp;rcontent=','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes'); void 0"
+          >新浪微博</a
+        >
+      </li>
+    </ul>
+    <!-- 点击微信好友生成的二维码 -->
+    <script>
+      window._bd_share_config = {
+        common: {
+          bdSnsKey: {},
+          bdText: "",
+          bdMini: "2",
+          bdMiniList: false,
+          bdPic: "",
+          bdStyle: "0",
+          bdSize: "16",
+        },
+        share: {},
+        selectShare: {
+          bdContainerClass: null,
+          bdSelectMiniList: ["qzone", "tsina", "tqq", "renren", "weixin"],
+        },
+      };
+      with (document)
+        (0)[
+          ((getElementsByTagName("head")[0] || body).appendChild(
+            createElement("script")
+          ).src =
+            "http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=" +
+            ~(-new Date() / 36e5))
+        ];
+    </script>
+  </body>
+</html>
