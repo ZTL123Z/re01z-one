@@ -1,46 +1,195 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>朱天伦的窝</title>
-    <style>  
+    <meta charset="UTF-8" />
+    <meta name="朱天伦的小窝" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>布局</title>
+    <meta name="description" content="朱天伦的个人网站" />
+    <meta name="keywords" content="朱天伦,湖北,黄师,Re01,从零开始的编程之路" />
+    <meta name="copyright" content="朱天伦" />
+    <meta name="author" content="朱天伦" />
+    <meta name="reply-to" content="ztl" />
+    <meta name="robots" content="all" />
+    <meta property="og:image" content="z.jpg" />
+    <meta name="og:title" content="朱天伦" />
+    <meta
+      name="og:url"
+      content="https://ztl123z.github.io/re01z-one/
+"
+    />
+    <meta
+      name="og:description"
+      content="朱天伦,湖北,黄师,Re01,从零开始的编程之路"
+    />
+    <link
+      rel="icon"
+      href="D:\vscprojects\vsc\html1\favicon_logosc\favicon.ico"
+    />
+    <style>
       body {
         margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .flex {
+        display: flex;
+      }
+      .yinying {
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .ma8 {
+        margin: 8px;
+      }
+      .mar8 {
+        margin-right: 8px;
+      }
+      .mat8 {
+        margin-top: 8px;
+      }
+      .mal8 {
+        margin-left: 8px;
+      }
+      .mab8 {
+        margin-bottom: 8px;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(15, 15, 15);
+        font-size: 14px;
+        color: #666;
+      }
+      .youqu {
+        margin-left: 8px;
+      }
+      .shuJu {
+        margin: 0 0 8px;
+        flex: auto;
+      }
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neirong {
+          flex-direction: column;
+        }
+        .shuju {
+          flex-direction: column;
+        }
+      }
+      .neirong::-webkit-scrollbar {
+        display: none;
       }
     </style>
   </head>
-  <body>
-    <div style="
-     background-color:#f1f1f1;
-     text-align: center;
-     padding:40px;
-     " 
-    >
-      <img src='https://ts1.cn.mm.bing.net/th?id=OIP-C.h-JNy6lHXApxbrzOELlEGQHaID&w=239&h=260&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2' alt="朱天伦" width="80px" height="80px">
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="yinying baise mal8 ceBian">
+      <!--头像-->
+      <div
+        class="flex"
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #0d0101;
+        "
+      >
+        <img src="z.jpg" width="50px" height="50px" alt="" />
+        <div style="margin: 10px">朱天伦</div>
+      </div>
+      <!--导航-->
+      <div class="flex1">
+        <div class="daohang">
+          <a href="http://acm.hgnu.edu.cn/">oj 友情链接1</a>
+        </div>
+        <div class="daohang">
+          <a href="https://ac.nowcoder.com/">牛客 友情链接2</a>
+        </div>
+        <div class="daohang">
+          <a href="https://www.runoob.com/">菜鸟 友情链接3</a>
+        </div>
+        <div class="daohang">
+          <a href="https://www.csdn.net/">CSND 友情链接4</a>
+        </div>
+        <div class="daohang">daohang</div>
+        <div class="daohang">daohang</div>
+      </div>
     </div>
-    <div style="
-       max-width: 700px;
-       margin: 30px auto;
-       padding: 15px;
-       line-height:1.7;
-    ">
-        <p>欢迎来到我的网站</p>
-        <p>成功没有什么秘诀，如果真的有，也就两个，第一个就是坚持到底，永不放弃；第二个是当你想放弃的时候，回过头来看看第一个秘诀。</p>
-        <p>所以你现在在干什么，你想做什么，你应该做什么</p>
-        <p>看看你的oj做完了吗</p>
-        <p>看看你的牛客题刷了多少</p>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+      <!--头部-->
+      <div class="column yinying baise" style="height: 70px; z-index: 1"></div>
+      <!--内容-->
+      <div class="flex1 flex neirong" style="overflow: auto">
+        <!--左区-->
+        <div style="flex: 3" class="flex column ma8">
+          <!--数据-->
+          <div class="flex shuju">
+            <!--数据块-->
+            <div
+              style="height: 100px"
+              class="shuJu yinying baise flex1 mar8"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJu yinying baise flex1 mar8"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJu yinying baise flex1 mar8"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJu yinying baise flex1 mar8"
+            ></div>
+          </div>
+          <!--列表-->
+          <div class="flex column">
+            <!--列表项-->
+            <div style="height: 160px" class="yinying baise mat8">
+              <p>欢迎来到我的网站</p>
+              <p>
+                成功没有什么秘诀，如果真的有，也就两个，第一个就是坚持到底，永不放弃；第二个是当你想放弃的时候，回过头来看看第一个秘诀。
+              </p>
+              <p>所以你现在在干什么，你想做什么，你应该做什么</p>
+              <p>看看你的oj做完了吗</p>
+            </div>
+            <div style="height: 160px" class="yinying baise mat8">
+              <p>看看你的牛客题刷了多少</p>
+              <p>正在完善中</p>
+            </div>
+            <div style="height: 160px" class="yinying baise mat8"></div>
+            <div style="height: 160px" class="yinying baise mat8"></div>
+            <div style="height: 160px" class="yinying baise mat8"></div>
+            <div style="height: 160px" class="yinying baise mat8"></div>
+            <div style="height: 160px" class="yinying baise mat8"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mat8 mar8 youqu">
+          <!--提示-->
+          <div style="height: 150px" class="yinying baise"></div>
+          <!--消息-->
+          <div style="height: 300px" class="yinying baise mat8"></div>
+        </div>
+      </div>
     </div>
-    <div style="
-     background-color: #f1f1f1;
-     text-align: center;
-     padding: 40px;
-     font-size: 12px;
-     " >
-     <p>我的网站</p>
-     <a href="http://acm.hgnu.edu.cn/">oj友情链接1</a>
-     <p>
-     <a href="https://ac.nowcoder.com/">牛客友情链接2</a>
-     </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
   </body>
 </html>
